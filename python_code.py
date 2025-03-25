@@ -11,7 +11,7 @@ questions_and_answers = {'How many Spartans accompany Master Chief in Silver Tea
 }
 
 name = input('Whats your name? ')
-print('how much do you know about Halo {name}?')
+print(f'how much do you know about Halo {name}?')
 
 
 
