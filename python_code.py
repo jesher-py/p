@@ -10,8 +10,8 @@ Quiz_questions_and_answers = {'How many Spartans accompany Master Chief in Silve
              'Which actor portrays Master Chief in the TV series?': "Actor Pablo Schreiber"
 }
 
-name = input('Whats your name? ')
-if name == " ":
+name = len(input('Whats your name? '))
+if name is int:
    print('Plese enter a valid name')
 
 
@@ -21,10 +21,11 @@ print(f'how much do you know about Halo {name}?')
 while True:
   try:
       num_questions = int(input('choose between 5 and 10 questions '))
-      if num_questions > 5 <= 10:
+      if num_questions >= 5 <=10:
         break
       else:
-         print('hoose a valid number')
+         print('choose a valid number')
   except:
     print('choose a valid number')
+    
 
