@@ -12,7 +12,7 @@ Quiz_questions_and_answers = {'How many Spartans accompany Master Chief in Silve
 
 name = input('Whats your name? ')
 length_of_name = len(name)
-if length_of_name > 29:
+while length_of_name > 29:
    print('Plese enter a valid name')
 
 
