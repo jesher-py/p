@@ -11,9 +11,17 @@ Quiz_questions_and_answers = {'How many Spartans accompany Master Chief in Silve
 }
 
 name = input('Whats your name? ')
-length_of_name = len(name)
-while length_of_name > 29:
-   print('Plese enter a valid name')
+while True:
+    length_of_name = len(name)
+    if length_of_name > 29:
+       print('Please enter a valid name')
+       name = input('Whats your name? ')
+
+    else:
+       break
+       
+
+
 
 
 
@@ -25,8 +33,8 @@ while True:
       if num_questions >= 5 <= 10:
         break
       else:
-         print('choose a valid number')
+         print('Please choose a valid number')
   except:
-    print('choose a valid number')
+    print('Please choose a valid number')
 
 
