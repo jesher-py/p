@@ -16,7 +16,8 @@ while True:
     if length_of_name > 29:
        print('Please enter a valid name')
        name = input('Whats your name? ')
-
+    if name == " ":
+       print('Please enter a valid name')
     else:
        break
        
@@ -30,11 +31,13 @@ print(f'how much do you know about Halo {name}?')
 while True:
   try:
       num_questions = int(input('choose between 5 and 10 questions '))
-      if num_questions >= 5 <= 10:
-        break
-      else:
-         print('Please choose a valid number')
+      if num_questions >= 5:
+         if num_questions <=10:
+            break
+         else:
+           print('Please choose a valid number')
   except:
     print('Please choose a valid number')
+
 
 
