@@ -1,3 +1,4 @@
+# Questions for Quiz
 Quiz_questions_and_answers = {'How many Spartans accompany Master Chief in Silver Team?': 3,
              'What is the name of the alien alliance opposing humanity?': 'The covanant',
              'What is the name of the AI that assists Master Chief?'
@@ -9,7 +10,7 @@ Quiz_questions_and_answers = {'How many Spartans accompany Master Chief in Silve
              'Where does Soren-066 live in S1': 'Rubble',
              'Which actor portrays Master Chief in the TV series?': "Actor Pablo Schreiber"
 }
-
+# Ask for name
 name = input('Whats your name? ')
 while True:
     length_of_name = len(name)
@@ -20,13 +21,8 @@ while True:
        print('Please enter a valid name')
     else:
        break
-       
 
-
-
-
-
-
+# Ask for a number of questions from 5 to 10
 print(f'how much do you know about Halo {name}?')
 while True:
   try:
